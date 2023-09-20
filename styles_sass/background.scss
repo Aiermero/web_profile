@@ -1,0 +1,42 @@
+@mixin BubbleConfig($time, $size, $left, $top){
+    position: absolute;
+    width: $size;
+    height: $size;
+    border-radius: 100%;
+    left: $left;
+    top: $top;
+    background-color: #ffffff00;
+    background-image: linear-gradient(345deg, #ffffff65 0%, #6284ff00 50%, #ffffffd0 100%);
+    animation-name: flotante1;
+    animation-duration: $time;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-color: #0093E9;
+    background-image: linear-gradient(0deg, #005586 0%, #80D0C7 100%);
+    &__container1{
+        height: 50%;
+        width: 50%;
+        border: 1px solid white;
+        &__bubble1{
+            @include BubbleConfig(2s, 10vw, 10%, 5%)
+        }
+        &__bubble2{
+            @include BubbleConfig(1.8s, 5vw, 15%, 15%)
+        }
+        &__bubble3{
+            @include BubbleConfig(1.5s, 3vw, 15%, 25%)
+        }
+    }
+}
+@keyframes flotante1{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+}

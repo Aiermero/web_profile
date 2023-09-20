@@ -1,0 +1,20 @@
+.bio-container{
+    position: absolute;
+    border-radius: 20px;
+    width: 100vw;
+    height: 800px;
+    border: 1px solid white;
+    align-self: center;
+    backdrop-filter: blur(10px);
+    display: flex;
+    &__half1{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__img{
+            
+        }
+    }
+}
