@@ -5,21 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="background">
-        <div class="background__container1">
-            <div class="background__container1__bubble1"></div>
-            <div class="background__container1__bubble2"></div>
-            <div class="background__container1__bubble3"></div>
-        </div>
-    </div>
-    <section class="bio-container">
-        <div class="bio-container__half1">
-            <img class="bio-container__half1__img" alt="foto">
-        </div>
-        <div class="bio-container__half2"></div>
-        
-    </section>
+    <nav class="navbar"></nav>
+    <main>
+        <section class="bio-section">
+            <div class="bio-section__container">
+                <img class="bio-section__container__img" src="./assets/_DSC0259 mini.jpg" alt="foto">
+                <div class="bio-section__container__description">
+                    <h1 class="bio-section__container__description__name">Elam Vera</h1>
+                    <p class="bio-section__container__description__charge">Web Developer</p>
+                </div>
+            </div>
+        </section>
+        <section class="tech-section">
+            <div class="tech-section__container">
+                <h1 class="tech-section__container__title">Technologies</h1>
+                <div class="tech-section__container__techs">
+                    <div class="tech-section__container__techs__js">
+                        <img class="tech-section__container__techs__js__img" src="./assets/js.png" alt="">
+                        <h2>JavaScript</h2>
+                        <img src="./assets/arrow.svg" alt="arrow">
+                        <div class="tech-section__container__techs__js__subs">
+                            <ul class="tech-section__container__techs__js__subs__list inactive">
+                                <li>Async</li>
+                                <li>Promises</li>
+                                <li>DOM Manipulation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tech-section__container__techs__html">
+
+                    </div>
+                </div>
+                <div>
+                    <h2>HTML 5</h2>
+                    <div class="tech-section__container__techs__html">
+
+                    </div>
+                </div>
+                <div>
+                    <h2>CSS</h2>
+                    <div class="tech-section__container__techs__html">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact__container"> 
+                
+                <button class="contact__container__button">Contact me!</button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

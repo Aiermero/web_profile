@@ -1,93 +1,90 @@
-.background {
-  width: 100vw;
-  height: 100vh;
-  background-color: #0093E9;
-  background-image: linear-gradient(0deg, #005586 0%, #80D0C7 100%);
-}
-.background__container1 {
-  height: 50%;
-  width: 50%;
-  border: 1px solid white;
-}
-.background__container1__bubble1 {
-  position: absolute;
-  width: 10vw;
-  height: 10vw;
-  border-radius: 100%;
-  left: 10%;
-  top: 5%;
-  background-color: rgba(255, 255, 255, 0);
-  background-image: linear-gradient(345deg, rgba(255, 255, 255, 0.3960784314) 0%, rgba(98, 132, 255, 0) 50%, rgba(255, 255, 255, 0.8156862745) 100%);
-  animation-name: flotante1;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-.background__container1__bubble2 {
-  position: absolute;
-  width: 5vw;
-  height: 5vw;
-  border-radius: 100%;
-  left: 15%;
-  top: 15%;
-  background-color: rgba(255, 255, 255, 0);
-  background-image: linear-gradient(345deg, rgba(255, 255, 255, 0.3960784314) 0%, rgba(98, 132, 255, 0) 50%, rgba(255, 255, 255, 0.8156862745) 100%);
-  animation-name: flotante1;
-  animation-duration: 1.8s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-.background__container1__bubble3 {
-  position: absolute;
-  width: 3vw;
-  height: 3vw;
-  border-radius: 100%;
-  left: 15%;
-  top: 25%;
-  background-color: rgba(255, 255, 255, 0);
-  background-image: linear-gradient(345deg, rgba(255, 255, 255, 0.3960784314) 0%, rgba(98, 132, 255, 0) 50%, rgba(255, 255, 255, 0.8156862745) 100%);
-  animation-name: flotante1;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes flotante1 {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
-.bio-container {
+.navbar {
   position: absolute;
-  border-radius: 20px;
-  width: 100vw;
-  height: 800px;
-  border: 1px solid white;
-  align-self: center;
-  backdrop-filter: blur(10px);
-  display: flex;
+  background-color: rgba(0, 0, 0, 0.753);
+  height: 8%;
+  width: 100%;
 }
-.bio-container__half1 {
-  width: 50%;
-  height: 100%;
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.bio-section {
+  background-color: rgba(128, 170, 248, 0.692);
+  width: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.bio-section__container {
+  margin-top: 15%;
+  background-color: rgba(255, 255, 255, 0.322);
+  border-radius: 10px;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.61);
+}
+.bio-section__container__img {
+  border-radius: 10px;
+  width: 80%;
+  height: auto;
+}
+.bio-section__container__description {
+  width: 100%;
+  height: 15%;
+}
+.bio-section__container__description__name {
+  font-family: "Catamaran", sans-serif;
+  text-align: center;
+  margin-top: 5%;
+  color: rgb(255, 255, 255);
+}
+.bio-section__container__description__charge {
+  font-family: "Catamaran", sans-serif;
+  margin-top: 5%;
+  color: rgb(44, 44, 44);
+  text-align: center;
+}
+
+.tech-section {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.tech-section__container {
+  height: 100%;
+  width: 100%;
+}
+.tech-section__container__techs {
+  width: 100%;
+}
+.tech-section__container__techs__js {
+  width: 100%;
+  display: flex;
+}
+.tech-section__container__techs__js__img {
+  width: 10%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

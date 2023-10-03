@@ -1,20 +1,42 @@
-.bio-container{
-    position: absolute;
-    border-radius: 20px;
-    width: 100vw;
-    height: 800px;
-    border: 1px solid white;
-    align-self: center;
-    backdrop-filter: blur(10px);
+.bio-section{
+    background-color: rgba(128, 170, 248, 0.692);
+    width: 100%;
+    height: 80%;
     display: flex;
-    &__half1{
-        width: 50%;
-        height: 100%;
+    justify-content: center;
+    align-items: center;
+    &__container{
+        margin-top: 15%;
+        background-color: rgba(255, 255, 255, 0.322);
+        border-radius: 10px;
+        width: 80%;
+        height: 80%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.61);
         &__img{
-            
+            border-radius: 10px;
+            width: 80%;
+            height: auto;
+        }
+        &__description{
+            width: 100%;
+            height: 15%;
+            &__name{
+                font-family: 'Catamaran', sans-serif;
+                text-align: center;
+                margin-top: 5%;
+                color:  rgb(255, 255, 255);
+            }
+            &__charge{
+                font-family: 'Catamaran', sans-serif;
+                margin-top: 5%;
+                color:  rgb(44, 44, 44);
+                text-align: center;
+            }
         }
     }
 }
+    
